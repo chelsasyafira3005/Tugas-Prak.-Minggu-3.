@@ -1,0 +1,376 @@
+/* ── NAVBAR ─────────────────────────────────── */
+.navbar {
+  background-color: #5e5b33;
+  padding: 0 32px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ccc799;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.logo-icon {
+  color: #f7ff83;
+  font-size: 1.5rem;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.navbar__links a {
+  color: #bbbc8f;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navbar__links a:hover {
+  color: #020202;
+}
+
+.btn-primary {
+  background-color: #707647;
+  color: #a5a584;
+  padding: 8px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #c4c682;
+}
+
+/* ── HERO ───────────────────────────────────── */
+.hero {
+  min-height: calc(100vh - 64px); /* tinggi layar dikurangi navbar */
+  background: linear-gradient(135deg, hsl(54, 18%, 46%), #a3a773, #c4bc8f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 32px;
+}
+
+.hero__content {
+  max-width: 640px;
+  text-align: center;
+}
+
+.hero__badge {
+  display: inline-block;
+  background-color: rgba(244, 247, 207, 0.2);
+  color: #797f4d;
+  border: 1px solid #b6be83;
+  padding: 4px 16px;
+  border-radius: 99px;
+  font-size: 0.85rem;
+  margin-bottom: 24px;
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #52563e;
+}
+
+.hero__desc {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 36px;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-outline {
+  border: 2px solid #858d5a;
+  color: #707043;
+  padding: 8px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.btn-outline:hover {
+  background-color: #a8a77c;
+  color: #ffffff;
+}
+
+/* ABOUT */
+.about{
+  padding: 96px 0;
+  background-color: #b6b781;
+}
+
+/* ── CONTAINER (utility class) ──────────────── */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ── SKILLS SECTION ─────────────────────────── */
+.skills {
+  padding: 96px 0;
+  background-color: #b5b787;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-align: center;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666666;
+  margin-bottom: 56px;
+}
+
+/* ── CSS GRID: 3 kolom ──────────────────────── */
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* ── SKILL CARD ─────────────────────────────── */
+.skill-card {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  padding: 32px 24px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card__icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.skill-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.skill-card p {
+  color: #666666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* ── PORTFOLIO ───────────────── */
+
+.portfolio{
+padding: 80px 0;
+background-color: #b9bd7f;
+}
+
+.portfolio-grid{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 24px;
+margin-top: 16px;
+}
+
+.portfolio-card{
+background-color: #ffffff;
+border: 1px solid #b3b58c;
+border-radius: 12px;
+padding: 24px;
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.portfolio-card{
+transform: translateY(-4px);
+box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+}
+
+.portfolio-card h3{
+font-size: 1.1rem;
+font-weight: 700;
+color: #1a1a2e;
+margin-bottom: 8px;
+}
+
+.portfolio-card p{
+color: #666666;
+font-size: 0.9rem;
+line-height: 1.6;
+}
+
+/* ── CONTACT ───────────────── */
+
+.contact{
+  padding: 80px 0;
+  background-color: #bfc28a;
+}
+
+.contact__form{
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact__form input,
+.contact__form textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.contact__form textarea{
+  height: 120px;
+  resize: none;
+}
+
+.contact__form button{
+  width: 100%;
+}
+
+.contact__social{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact__social a{
+  display: inline-block;
+  margin: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+/* ── FOOTER ───────────────── */
+
+.footer{
+  background-color: #bbbc8a;
+  color: #000000;
+  padding: 48px 20px;
+}
+
+.footer__content{
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer__title{
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.footer__desc{
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.footer__copy{
+  font-size: 0.8rem;
+  color: #999999;
+}
+
+
+/* ═══════════════════════════════
+   RESPONSIVE DESIGN
+════════════════════════════════ */
+
+/* ── TABLET ── */
+@media (max-width:1024px){
+
+  .portfolio-grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .skills__grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .hero__title{
+    font-size: 2.3rem;
+  }
+
+}
+
+
+/* ── MOBILE ── */
+@media (max-width:768px){
+
+  .container{
+    padding: 0 20px;
+  }
+
+  .navbar{
+    padding: 0 20px;
+  }
+
+  .navbar__links{
+    display: none;
+  }
+
+  .hero__title{
+    font-size: 2rem;
+  }
+
+  .hero__desc{
+    font-size: 1rem;
+  }
+
+  .portfolio-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .skills__grid{
+    grid-template-columns: 1fr;
+  }
+
+  .skills{
+    padding: 60px 0;
+  }
+
+  .section-title{
+    font-size: 1.8rem;
+  }
+
+}
